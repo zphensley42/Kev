@@ -25,4 +25,8 @@ class Bar {
     fun destroy() {
         eventScope.clear()
     }
+    
+    fun testEvent() {
+        FooEvent("SomeValue").emit()
+    }
 }
